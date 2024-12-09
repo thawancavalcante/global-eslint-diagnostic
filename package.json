@@ -2,11 +2,13 @@
   "name": "global-eslint-diagnostic",
   "displayName": "Global Eslint Diagnostic",
   "description": "A way to show on problems tab all eslint problems without needed to be with the files open",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Thawan Cavalcante",
     "email": "thawan.cavalcante@gmail.com"
   },
+  "icon": "./logo.png",
+  "publisher": "thawancavalcante",
   "repository": {
     "type": "git",
     "url": "https://github.com/thawancavalcante/global-eslint-diagnostic"
