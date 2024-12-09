@@ -1,0 +1,48 @@
+{
+  "name": "global-eslint-diagnostic",
+  "displayName": "Global Eslint Diagnostic",
+  "description": "A way to show on problems tab all eslint problems without needed to be with the files open",
+  "version": "0.0.1",
+  "author": {
+    "name": "Thawan Cavalcante",
+    "email": "thawan.cavalcante@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thawancavalcante/global-eslint-diagnostic"
+  },
+  "engines": {
+    "vscode": "^1.91.0"
+  },
+  "categories": [
+    "Linters"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.enableEslintDiagnosticCommand",
+        "title": "Enable ESLint diagnostic"
+      },
+      {
+        "command": "extension.disableEslintDiagnosticCommand",
+        "title": "Disable ESLint diagnostic"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.91.0",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
+  }
+}
